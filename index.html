@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/adaptive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/styles/shades-of-purple.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="container-header">
+            <div class="cap-header">
+                <h1>CV</h1>
+                <div class="header_menu menu">
+                    <div class="menu_icon">
+                        <span></span>
+                    </div>
+                    <nav class="menu_body">
+                        <ul class="menu_list">
+                            <li><a data-goto=".contacts-container" href="#" class="menu_link">Contacts</a></li>
+                            <li><a data-goto=".section_2" href="#" class="menu_link">About myself</a></li>
+                            <li><a data-goto=".skills-container" href="#" class="menu_link">Skills</a></li>
+                            <li><a data-goto=".project-container" href="#" class="menu_link">Projects</a></li>
+                            <li><a data-goto=".section_4" href="#" class="menu_link">Code examples</a></li>
+                            <li><a data-goto=".education-container" href="#" class="menu_link">Education</a></li>
+                            <li><a data-goto=".language-container" href="#" class="menu_link">Languages</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="section_1">
+                <div class="contacts-container">
+                    <h2 id="id-contacts">Contacts</h2>
+                    <ul>
+                        <li><span>email:</span><a href="mailto:nikitos1999b@mail.ru">nikitos1999b@mail.ru</a></li>
+                        <li><span>Telegram:</span><a href="https://t.me/onl_niki">@onl_niki</a></li>
+                        <li><span>GitHub:</span><a href="https://github.com/onlyniki">onlyniki</a></li>
+                        <li><span>Phone:</span><strong>+375 44 784-81-70</strong></li>
+                    </ul>
+                </div>
+
+                <div class="mainPhoto-container">
+                    <figure class="mainPhoto">
+                        <img src="img/Me.png" alt="Me">
+                    </figure>
+                    <p><span>Borisevich Nikita Andreevich</span><br><span>Web-developer</span></p>
+                </div>
+
+            </section>
+            <section class="section_2">
+                <h2 id="id-myself">About myself</h2>
+                <p>I aim to become a software developer. I can achieve it because I have technical mind and mathematical
+                    background.
+                    Also I learn fast and I’m able to handle multiple tasks. My current job is a sales manager.
+                    This experience has upgraded my communication, leadership and problem solving skills.</p>
+            </section>
+            <section class="section_3">
+                <div class="skills-container">
+                    <h2 id="id-skills">Skills</h2>
+                    <ul>
+                        <li>JavaScript (Fundamentals)</li>
+                        <li>Git/GitHub</li>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>Algorithms (basic knowledge)</li>
+                        <li>Markdown</li>
+                        <li>C (basic knowledge)</li>
+                    </ul>
+                </div>
+                <div class="project-container">
+                    <h2>My only project for now</h2><br>
+                    <a href="https://onlyniki.github.io/rsschool-cv/cv" target="_blank"><img class="cv_picture"
+                            src="img/CV-picture.PNG" alt="My CV"></a>
+                    <p>My CV made using Markdown</p>
+                </div>
+            </section>
+            <section class="section_4">
+                <h2 id="id-code">Code examples</h2>
+                <pre>
+                    <code>
+    var isAnagram = function(test, original) {
+        test = test.toLowerCase().split('');
+                original = original.toLowerCase().split('');
+                test.sort();
+                original.sort();
+                test = test.join('');
+                original = original.join('');
+                if (test == original) {
+                    return true;
+                } else {
+                    return false;
+                }
+    };    
+                    </code>
+                </pre>
+            </section>
+            <section class="section_5">
+                <div class="education-container">
+                    <h3 id="id-education">Education</h3>
+                    <ul>
+                        <li>Belarusian National Technical University</li>
+                        <li>CS50</li>
+                        <li>Udemy :
+                            <ul>
+                                <li>JavaScript + React</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="language-container">
+                    <h3 id="id-languages">Languages</h3>
+                    <ul>
+                        <li>Russian</li>
+                        <li>Belarusian</li>
+                        <li>English (A1+)</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer class="container-footer">
+            <aside class="school">
+                <a href="https://rs.school/js/"><img src="img/rs_school_js.svg" alt="school's logo"></a>
+            </aside>
+            <aside class="git-logo">
+                <a href="https://github.com/onlyniki"><img src="img/github-icon.svg" alt="My github"></a>
+            </aside>
+            <aside class="youtube">
+                <a href=""><img src="https://image.flaticon.com/icons/png/512/48/48968.png" alt="My youtube"></a>
+            </aside>
+            <p><time>2021</time></p>
+        </footer>
+    </div>
+    <script src="js/burger.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+    <script src="js/highlight.js"></script>
+</body>
+
+</html>
